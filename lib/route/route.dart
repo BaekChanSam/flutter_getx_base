@@ -1,15 +1,15 @@
+import 'package:flutter_getx_base/views/home/home_ctrl.dart';
+import 'package:flutter_getx_base/views/home/home_page.dart';
 import 'package:get/get.dart';
-import 'package:olivestone_portfoli/search/search_home_ctrl.dart';
-import 'package:olivestone_portfoli/search/search_home_page.dart';
 
 final pages = [
   GetPage(
     name: pageSearchHome,
-    page: () => SearchHomePage(),
+    page: () => HomePage(),
     binding: BindingsBuilder(() {
-      Get.put(SearchHomeController());
+      Get.put(HomeController());
     }),
   ),
 ];
 
-const pageSearchHome = '/pageSearchHome';
+const pageSearchHome = '/pageHome';

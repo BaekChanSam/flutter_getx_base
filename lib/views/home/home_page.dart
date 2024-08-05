@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:olivestone_portfoli/search/search_home_ctrl.dart';
 
-class SearchHomePage extends StatelessWidget {
-  SearchHomePage({Key? key}) : super(key: key);
+import 'home_ctrl.dart';
 
-  late final SearchHomeController ctrl = Get.find();
+class HomePage extends StatelessWidget {
+  HomePage({Key? key}) : super(key: key);
+
+  late final HomeController ctrl = Get.find();
 
   @override
   Widget build(BuildContext context) {

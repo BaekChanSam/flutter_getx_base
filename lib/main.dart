@@ -1,9 +1,9 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_getx_base/route/route.dart';
+import 'package:flutter_getx_base/views/home/home_page.dart';
 import 'package:get/get.dart';
 import 'package:loggy/loggy.dart';
-import 'package:olivestone_portfoli/route/route.dart';
-import 'package:olivestone_portfoli/search/search_home_page.dart';
 
 void main() async {
   Loggy.initLoggy(
@@ -31,7 +31,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: SearchHomePage(),
+      home: HomePage(),
       initialRoute: pageSearchHome,
       getPages: pages,
     );

@@ -1,5 +1,5 @@
-import 'package:flutter_getx_base/views/home/home_ctrl.dart';
-import 'package:flutter_getx_base/views/home/home_page.dart';
+import 'package:flutter_getx_base/feature/home/home_ctrl.dart';
+import 'package:flutter_getx_base/feature/home/home_page.dart';
 import 'package:get/get.dart';
 
 final pages = [

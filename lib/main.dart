@@ -1,7 +1,7 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_getx_base/feature/home/home_page.dart';
 import 'package:flutter_getx_base/route/route.dart';
-import 'package:flutter_getx_base/views/home/home_page.dart';
 import 'package:get/get.dart';
 import 'package:loggy/loggy.dart';
 
@@ -56,6 +56,9 @@ void didChangeAppLifecycleState(AppLifecycleState state) {
     case AppLifecycleState.detached:
 
       /// 앱이 분리(detached)될 때의 처리
+      break;
+    case AppLifecycleState.hidden:
+      // TODO: Handle this case.
       break;
   }
 }
